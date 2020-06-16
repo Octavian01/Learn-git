@@ -1,0 +1,43 @@
+.primary-nav {
+    
+    &--pull-right {
+        @mixin atSmall {
+            float: right;
+        }    
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        @mixin clearfix;
+    }
+
+    li {
+        list-style: none;
+        padding: .1px 9px;
+        background-color: rgba($mainBlue, .8);
+        margin-top: 12px;
+        margin-right: 7px;
+
+        @mixin atSmall {
+            float: left;
+            margin: 0;
+            display: block;
+            padding-right: 20px;
+            background-color: rgba($mainBlue, 0);
+        }
+
+        display: inline-block;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        padding: 12px 0;
+        
+    }
+}
