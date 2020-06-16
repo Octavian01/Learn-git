@@ -21,6 +21,8 @@
     &__icon {
         margin-right: .5rem;
         width: 45px;
+        position: relative;
+        top: 9px;
 
         @mixin atMedium {
             width: 58px;
@@ -29,5 +31,9 @@
         @mixin atLarge {
             width: 73px;
         }
+    }
+
+    &--blue {
+        color: $mainBlue;
     }
 }

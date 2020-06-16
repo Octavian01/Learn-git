@@ -27,8 +27,21 @@
             }
         }
 
+        &--gutters--small > div {
+            
+
+            @mixin atMedium {
+                padding-right: 30px;
+            }
+
+            @mixin atLarge {
+                padding-right: 40px;
+            }
+        }
+
         &--gutters > div:last-child,
-        &--gutters--large > div:last-child {
+        &--gutters--large > div:last-child,
+        &--gutters--small > div:last-child {
             padding-right: 0;
         }
 
@@ -38,6 +51,16 @@
 
             &--larger {
                 width: 38%;
+            }
+
+            &--first-two {
+                width: 34.5%;
+                float: left;
+            }
+
+            &--last {
+                width: 31%;
+                float: left;
             }
         }
     
@@ -53,6 +76,20 @@
         &__medium-6 {
             float: left;
             width: 50%;
+        }
+
+        &--t-padding {
+            padding-top: 80px;
+        }
+    }
+
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;  
+        }
+        & > div {
+            float: none;
+            display: flex;
         }
     }
 }

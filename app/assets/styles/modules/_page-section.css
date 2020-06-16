@@ -9,4 +9,16 @@
         background-color: $mainBlue;
         color: white;
     }
+
+    &--testimonials {
+        
+        background: url('assets/images/testimonials-bg.jpg') top center no-repeat;
+        background-size: cover;
+        @mixin atMedium {
+            padding-bottom: 5rem;
+        }
+        @mixin atLarge {
+            padding-bottom: 8rem;
+        }
+    }
 }
