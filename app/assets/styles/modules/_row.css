@@ -15,7 +15,20 @@
         &--gutters > div {
             padding-right: 65px;
         }
-        &--gutters > div:last-child {
+
+        &--gutters--large > div {
+            padding-right: 40px;
+            @mixin atMedium {
+                padding-right: 50px;
+            }
+
+            @mixin atLarge {
+                padding-right: 100px;
+            }
+        }
+
+        &--gutters > div:last-child,
+        &--gutters--large > div:last-child {
             padding-right: 0;
         }
 
@@ -35,6 +48,11 @@
             &--smaller {
                 width: 62%;
             }
+        }
+
+        &__medium-6 {
+            float: left;
+            width: 50%;
         }
     }
 }
