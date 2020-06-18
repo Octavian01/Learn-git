@@ -11,6 +11,11 @@
 
     @mixin atSmall {
         background-color: rgba($mainBlue, .3);
+        position: fixed;
+
+        &--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     }
 
     &__btn-container {
@@ -31,6 +36,15 @@
             left: auto;
             transform: translateX(0);
             padding: 25px 36px;
+            transition: .5s;
+            &--minimize {
+                bottom: 0;
+                padding: 7px 36px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
     }
 
