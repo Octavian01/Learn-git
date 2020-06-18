@@ -1,0 +1,18 @@
+.reveal-item {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+    
+    &--is-visible {
+        animation: ani 1.5s;
+        opacity: 1;
+    }
+}
+
+@keyframes ani {
+    from {
+        transform: scale(1.15);
+    }
+    to {
+        transform: scale(1);
+    }
+}
