@@ -17,7 +17,9 @@
     "url": "https://github.com/Octavian01/Learn-git/issues"
   },
   "homepage": "https://github.com/Octavian01/Learn-git#readme",
-  "dependencies": {},
+  "dependencies": {
+    "lazysizes": "^5.2.2"
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
     "css-loader": "^3.5.3",
